@@ -1,6 +1,6 @@
 # Weather App 🌦️
 
-A simple desktop application in Python using PyQt5 that shows the weather forecast for any city in the world using the OpenWeather public API.
+A desktop application in Python using PyQt5 that shows the weather forecast for any city in the world using the OpenWeather public API.
 
 ---
 
