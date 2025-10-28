@@ -43,13 +43,10 @@ source .venv/bin/activate    # Linux / Mac
 3. Install dependencies
 	- pip install -r requirements.txt
 
-4. Get your OpenWeather API key and replace it in ui.py (inside method get_weather)
-	- api_key = "YOUR KEY"
-
 ## Usage
 
 Run the application
-	- python main.py
+	- py main.py
 
 - Enter the city name and click in the Get Weather button
 
