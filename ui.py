@@ -1,7 +1,9 @@
 import requests
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QWidget, QLabel, QFrame, QLineEdit, QPushButton, QVBoxLayout
-from datetime import datetime, timezone, timedelta   
+from datetime import datetime, timezone, timedelta
+from dotenv import load_dotenv
+import os   
 
 class WeatherApp(QWidget):
 
@@ -160,9 +162,10 @@ class WeatherApp(QWidget):
     def get_weather(self):
     
         # api config
-        api_key = "8c7aba3be82076d709725ea7ca5581ef"
+        load_dotenv()
+        API_KEY = os.getenv("API_KEY")
         city = self.city_input.text()
-        url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
+        url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}"
         # get data
         try:
             response = requests.get(url)
