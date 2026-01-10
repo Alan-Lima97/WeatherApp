@@ -32,7 +32,7 @@ git clone https://github.com/Alan-Lima97/WeatherApp.git
 cd WeatherApp
 ```
 
-2. Create a virtual environment (optional but recommended):
+2. Create a virtual environment:
 
 ```bash
 python -m venv .venv
@@ -42,6 +42,20 @@ source .venv/bin/activate    # Linux / Mac
 
 3. Install dependencies
 	- pip install -r requirements.txt
+
+## Environment Variables
+
+This application requires an API key from OpenWeather.
+
+1. Create a `.env` file in the root directory of the project  
+2. Add the following line:
+
+    API_KEY=your_openweather_api_key_here
+
+3. You can obtain a free API key at:  
+   https://openweathermap.org/api
+
+⚠️ Do not commit the `.env` file to the repository.
 
 ## Usage
 
