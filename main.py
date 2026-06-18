@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication
-from ui import WeatherApp
+from app.ui.window import WeatherApp
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
