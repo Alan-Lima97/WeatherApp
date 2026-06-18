@@ -1,0 +1,123 @@
+/* ===== Root ===== */
+QWidget {
+    background-color: #0b1220;
+}
+
+/* ===== Base text ===== */
+QLabel, QComboBox, QLineEdit, QPushButton {
+    font-family: Segoe UI, Calibri;
+    color: #e6edff;
+}
+
+/* ===== City label ===== */
+QLabel#city_label {
+    font-size: 22px;
+    font-weight: 500;
+    color: #c7d6ff;
+}
+
+/* ===== Input ===== */
+QComboBox#city_input,
+QComboBox#unit_input {
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    background-color: #020617;
+}
+
+QComboBox#city_input:focus,
+QComboBox#unit_input:focus {
+    border: 1px solid #3b82f6;
+    background-color: #020617;
+}
+
+QComboBox#city_input::drop-down,
+QComboBox#unit_input::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 32px;
+    border-left: 1px solid #1e293b;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #111827;
+}
+
+QComboBox#city_input::drop-down:hover,
+QComboBox#unit_input::drop-down:hover {
+    background-color: #1e293b;
+}
+
+QComboBox#city_input::down-arrow,
+QComboBox#unit_input::down-arrow {
+    image: url("__CHEVRON_DOWN_ICON__");
+    width: 16px;
+    height: 16px;
+}
+
+QComboBox#city_input QAbstractItemView,
+QComboBox#unit_input QAbstractItemView {
+    background-color: #020617;
+    border: 1px solid #1e293b;
+    selection-background-color: #2563eb;
+    color: #e6edff;
+}
+
+/* ===== Button ===== */
+QPushButton#get_weather_button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #2563eb;
+    border: none;
+}
+
+QPushButton#get_weather_button:hover {
+    background-color: #1d4ed8;
+}
+
+QPushButton#get_weather_button:pressed {
+    background-color: #1e40af;
+}
+
+/* ===== Cards ===== */
+QFrame#main_frame {
+    background-color: #020617;
+    border-radius: 16px;
+    border: 1px solid #1e293b;
+}
+
+QFrame#extra_frame {
+    background-color: transparent;
+}
+
+/* ===== Temperature ===== */
+QLabel#temperature_label {
+    font-size: 72px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* ===== Emoji ===== */
+QLabel#emoji_label {
+    font-size: 80px;
+    margin-top: 6px;
+}
+
+/* ===== Description ===== */
+QLabel#description_label {
+    font-size: 18px;
+    color: #c7d6ff;
+    margin-bottom: 6px;
+}
+
+/* ===== Extra info ===== */
+QLabel#feels_like_label,
+QLabel#min_max_label,
+QLabel#humidity_label,
+QLabel#wind_label,
+QLabel#sunrise_sunset_label {
+    font-size: 13px;
+    color: #9fb3ff;
+}
